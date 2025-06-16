@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimedia y Formularios</title>
+</head>
+<body>
+
+  <header>
+    <h1>Galería multimedia</h1>
+    <nav>
+      <ul>
+        <li><a href="estructura_basica.html">Inicio</a></li>
+        <li><a href="articulo.html">Artículo</a></li>
+        <li><a href="multimedia.html">Multimedia</a></li>
+        <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a></li> <!-- Enlace absoluto -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Video y audio</h2>
+
+      <video width="320" height="240" controls>
+        <source src="video/html.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+
+        <h2>Audio</h2>
+      <audio controls>
+        <source src="audio/" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
